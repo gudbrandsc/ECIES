@@ -6,4 +6,6 @@ Elliptic Curve Integrated Encryption Scheme, or ECIES, is a hybrid encryption sy
 ## Install python ECIES
  - https://pypi.org/project/eciespy/
  
- 
+ ## Flow diagram 
+ ![alt text](https://github.com/gudbrandsc/ECIES-project/blob/master/1_A3yiRaX7xBPBsovR_NyuVQ.png "Logo Title Text 1")
+
