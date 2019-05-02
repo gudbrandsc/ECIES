@@ -8,30 +8,11 @@ The small key sizes make ECC very appealing for devices with limited storage or 
 
 
 ## Install python ECIES
-I was unable to use eciepy if i used pip install, and I therefor decided to download the zip file. Once you have the zip file simple move the **ecies** folder that is inside the first folder over to the same directory as your python file. Then you can simple run a simple starter code to make sure that everything works correctly
- ```
-from ecies.utils import generate_eth_key, generate_key
-from ecies import encrypt, decrypt
-import binascii
-
-privKey = generate_eth_key()
-print(privKey)
-privKeyHex = privKey.to_hex()
-pubKeyHex = privKey.public_key.to_hex()
-print("Encryption public key:", pubKeyHex)
-print("Decryption private key:", privKeyHex)
-
-plaintext = b'Some plaintext for encryption'
-print("Plaintext:", plaintext)
-
-encrypted = encrypt(pubKeyHex, plaintext)
-print("Encrypted:", binascii.hexlify(encrypted))
-
-decrypted = decrypt(privKeyHex, encrypted)
-print("Decrypted:", decrypted)
- ```
- 
- - https://pypi.org/project/eciespy/
+I was unable to use the ecies library after running.
+``` 
+pip install eciespy
+```
+I therefor decided to follow some examples that I found online for key generation, encryption and decryption. To see the result of this program check this file. 
  
  ## Flow diagram 
  ![alt text](https://github.com/gudbrandsc/ECIES-project/blob/master/1_A3yiRaX7xBPBsovR_NyuVQ.png "Logo Title Text 1")
