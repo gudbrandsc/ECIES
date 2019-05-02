@@ -13,6 +13,10 @@ I was unable to use the ecies library after running.
 pip install eciespy
 ```
 I therefor decided to follow some examples that I found online for key generation, encryption and decryption. To see the result of this program check this esies.py. 
+
+## TODO
+- Add ui to display keys 
+- store keys to file (maybe with password)
  
  ## Flow diagram 
  ![alt text](https://github.com/gudbrandsc/ECIES-project/blob/master/1_A3yiRaX7xBPBsovR_NyuVQ.png "Logo Title Text 1")
