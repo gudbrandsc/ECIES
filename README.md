@@ -7,15 +7,14 @@ Elliptic Curve Integrated Encryption Scheme, or ECIES, is a hybrid encryption sy
 The small key sizes make ECC very appealing for devices with limited storage or processing power, which are becoming increasingly common in the IoT. A 256 bit ECC key is equivalent to RSA 3072 bit keys (which are 50% longer than the 2048 bit keys commonly used today). In terms of more traditional web server use cases, the smaller key sizes can offer speedier SSL handshakes (which can translate to faster page load times) and stronger security.
 
 
-## Install python ECIES
-I was unable to use the ecies library after running.
-``` 
-pip install eciespy
-```
-I therefor decided to follow some examples that I found online for key generation, encryption and decryption. To see the result of this program check this esies.py. 
+## ecies.py
+The goal for this script is to provde some easy understanding to how ecies work. By creating two sets of key pairs (receiver and sender). By using (ECDH) we create a shared secret between the sender and receiver that allows them to communicate with eachother without anyone being able to read their messages. The user can also store their shared secret to a hidden file, and load the secret key the next time they run the script.
 
+Before you try to use the program I would highly recommend you to read the following links: 
+https://en.wikipedia.org/wiki/Elliptic-curve_Diffie%E2%80%93Hellman
+https://www.cryptopp.com/wiki/Elliptic_Curve_Integrated_Encryption_Scheme
+https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange#Secrecy_chart
 ## TODO
-- Add ui to display keys 
 - store keys to file (maybe with password)
  
  ## Flow diagram 
