@@ -6,24 +6,24 @@ Elliptic Curve Integrated Encryption Scheme, or ECIES, is a hybrid encryption sy
 
 ## How does ECC compare to RSA?
 The biggest differentiator between ECC and RSA is key size compared to cryptographic strength.
-  ![alt text](https://github.com/gudbrandsc/ECIES-project/blob/master/key-size-comparison.jpg "Logo Title Text 1")
+  ![alt text](https://github.com/gudbrandsc/ECIES-project/blob/master/key-size-comparison.jpg "key size comparison")  
 As you can see in the chart above, ECC is able to provide the same cryptographic strength as an RSA-based system with much smaller key sizes. For example, a 256 bit ECC key is equivalent to RSA 3072 bit keys (which are 50% longer than the 2048 bit keys commonly used today). The latest, most secure symmetric algorithms used by TLS (eg. AES) use at least 128 bit keys, so it makes sense that the asymmetric keys provide at least this level of security.
 
 
 ## Why would I want to use ECC?
 The small key sizes make ECC very appealing for devices with limited storage or processing power, which are becoming increasingly common in the IoT. In terms of more traditional web server use cases, the smaller key sizes can offer speedier SSL handshakes (which can translate to faster page load times) and stronger security.
-![alt text](https://github.com/gudbrandsc/ECIES-project/blob/master/Encryption-time-comparison-between-ECIES-and-RSA-AES.png "Logo Title Text 1")
+![alt text](https://github.com/gudbrandsc/ECIES-project/blob/master/Encryption-time-comparison-between-ECIES-and-RSA-AES.png "Encryption time comparison between ECIES and RSA")
 
 ## ecies.py
-The goal for this script is to provde some easy understanding to how ecies work. By creating two sets of key pairs (receiver and sender). By using (ECDH) we create a shared secret between the sender and receiver that allows them to communicate with eachother without any eavesdropping third party being able to decrypt the messages. The user can also store their shared secret to a hidden file, and load the secret key the next time they run the script.
+The goal for this script is to provide some easy understanding of how ECIES work. By creating two sets of key pairs (receiver and sender). By using (ECDH) we create a shared secret between the sender and receiver that allows them to communicate with each other without any eavesdropping third party being able to decrypt the messages. The user can also store their shared secret to a hidden file, and load the secret key the next time they run the script.
 
-Before you try to use the program I would highly recommend you to read the following links: 
+## Credit
 https://en.wikipedia.org/wiki/Elliptic-curve_Diffie%E2%80%93Hellman
 https://www.cryptopp.com/wiki/Elliptic_Curve_Integrated_Encryption_Scheme
 https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange#Secrecy_chart
-## TODO
-- store keys to file (maybe with password)
- 
+https://www.globalsign.com/en/blog/elliptic-curve-cryptography/
+https://github.com/ofek/coincurve
+https://github.com/ethereum/eth-keys
  ## Flow diagram 
- ![alt text](https://github.com/gudbrandsc/ECIES-project/blob/master/1_A3yiRaX7xBPBsovR_NyuVQ.png "Logo Title Text 1")
+ ![alt text](https://github.com/gudbrandsc/ECIES-project/blob/master/1_A3yiRaX7xBPBsovR_NyuVQ.png "ECIES flow diagram")
 
