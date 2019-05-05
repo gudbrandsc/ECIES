@@ -5,7 +5,7 @@ Elliptic Curve Integrated Encryption Scheme, or ECIES, is a hybrid encryption sy
 
 ## Why would I want to use ECC?
 The small key sizes make ECC very appealing for devices with limited storage or processing power, which are becoming increasingly common in the IoT. A 256 bit ECC key is equivalent to RSA 3072 bit keys (which are 50% longer than the 2048 bit keys commonly used today). In terms of more traditional web server use cases, the smaller key sizes can offer speedier SSL handshakes (which can translate to faster page load times) and stronger security.
- ![alt text](https://github.com/gudbrandsc/ECIES-project/blob/master/1_A3yiRaX7xBPBsovR_NyuVQ.png "Logo Title Text 1")
+ ![alt text](https://github.com/gudbrandsc/ECIES-project/blob/master/Encryption-time-comparison-between-ECIES-and-RSA-AES.png"Logo Title Text 1")
 
 
 ## ecies.py
