@@ -3,8 +3,15 @@
 ## What is a Elliptic Curve Integrated Encryption Scheme
 Elliptic Curve Integrated Encryption Scheme, or ECIES, is a hybrid encryption system proposed by Victor Shoup in 2001. ECIES combines a Key Encapsulation Mechanism (KEM) with a Data Encapsulation Mechanism (DEM). The system independently derives a bulk encryption key and a MAC key from a common secret. Data is first encrypted under a symmetric cipher, and then the cipher text is MAC'd under an authentication scheme. Finally, the common secret is encrypted under the public part of a public/private key pair.
 
+
+## How does ECC compare to RSA?
+The biggest differentiator between ECC and RSA is key size compared to cryptographic strength.
+ ![alt text](https://github.com/gudbrandsc/ECIES-project/blob/master/Encryption-time-comparison-between-ECIES-and-RSA-AES.png "Logo Title Text 1")
+As you can see in the chart above, ECC is able to provide the same cryptographic strength as an RSA-based system with much smaller key sizes. For example, a 256 bit ECC key is equivalent to RSA 3072 bit keys (which are 50% longer than the 2048 bit keys commonly used today). The latest, most secure symmetric algorithms used by TLS (eg. AES) use at least 128 bit keys, so it makes sense that the asymmetric keys provide at least this level of security.
+
+
 ## Why would I want to use ECC?
-The small key sizes make ECC very appealing for devices with limited storage or processing power, which are becoming increasingly common in the IoT. A 256 bit ECC key is equivalent to RSA 3072 bit keys (which are 50% longer than the 2048 bit keys commonly used today). In terms of more traditional web server use cases, the smaller key sizes can offer speedier SSL handshakes (which can translate to faster page load times) and stronger security.
+The small key sizes make ECC very appealing for devices with limited storage or processing power, which are becoming increasingly common in the IoT. In terms of more traditional web server use cases, the smaller key sizes can offer speedier SSL handshakes (which can translate to faster page load times) and stronger security.
  ![alt text](https://github.com/gudbrandsc/ECIES-project/blob/master/Encryption-time-comparison-between-ECIES-and-RSA-AES.png "Logo Title Text 1")
 
 ## ecies.py
