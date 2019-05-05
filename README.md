@@ -17,6 +17,9 @@ The small key sizes make ECC very appealing for devices with limited storage or 
 ## ecies.py
 The goal for this script is to provide some easy understanding of how ECIES work. By creating two sets of key pairs (receiver and sender). By using (ECDH) we create a shared secret between the sender and receiver that allows them to communicate with each other without any eavesdropping third party being able to decrypt the messages. The user can also store their shared secret to a hidden file, and load the secret key the next time they run the script.
 
+## Flow diagram 
+ ![alt text](https://github.com/gudbrandsc/ECIES-project/blob/master/1_A3yiRaX7xBPBsovR_NyuVQ.png "ECIES flow diagram")
+
 ## Credit
 https://en.wikipedia.org/wiki/Elliptic-curve_Diffie%E2%80%93Hellman
 https://www.cryptopp.com/wiki/Elliptic_Curve_Integrated_Encryption_Scheme
@@ -24,6 +27,4 @@ https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange#Secrecy_chart
 https://www.globalsign.com/en/blog/elliptic-curve-cryptography/
 https://github.com/ofek/coincurve
 https://github.com/ethereum/eth-keys
- ## Flow diagram 
- ![alt text](https://github.com/gudbrandsc/ECIES-project/blob/master/1_A3yiRaX7xBPBsovR_NyuVQ.png "ECIES flow diagram")
 
